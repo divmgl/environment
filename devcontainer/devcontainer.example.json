@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.224.3/containers/docker-existing-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+
+  // Update to the name of the app you want to work with
+  "name": "App Name Here",
+
+  // Devcontainer specific settings
+  "settings": {},
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens"
+  ],
+
+  // Run the following services when the devcontainer starts
+  "runServices": [],
+
+  // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+  // "shutdownAction": "none",
+
+  // Environment variables you want to exist on the devcontainer
+  "remoteEnv": {}
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rm -f ~/.zshrc
+echo $(pwd)/.zshrc
+ln -s $(pwd)/.zshrc ~/.zshrc
