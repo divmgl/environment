@@ -15,4 +15,4 @@ eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 
 # Add DOCKERHUB_ACCESS_TOKEN to ~/.envrc
-echo $DOCKERHUB_ACCESS_TOKEN | docker login -u dimiguel --password-stdin
+cat ~/.DOCKERHUB_ACCESS_TOKEN | docker login -u dimiguel --password-stdin
