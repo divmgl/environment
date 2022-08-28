@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 docker compose build devcontainer go-devcontainer
-docker push dimiguel/devcontainer dimiguel/devcontainer:go
+docker push dimiguel/devcontainer 
+docker push dimiguel/devcontainer:go

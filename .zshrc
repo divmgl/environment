@@ -17,5 +17,8 @@ eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 eval "$(rbenv init - zsh)"
 
+export DENO_INSTALL="/Users/dimgl/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Add DOCKERHUB_ACCESS_TOKEN to ~/.envrc
 cat ~/.DOCKERHUB_ACCESS_TOKEN | docker login -u dimiguel --password-stdin
