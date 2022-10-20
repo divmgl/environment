@@ -20,5 +20,10 @@ eval "$(rbenv init - zsh)"
 export DENO_INSTALL="/Users/dimgl/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# pnpm
+export PNPM_HOME="/Users/dimgl/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
 # Add DOCKERHUB_ACCESS_TOKEN to ~/.envrc
 cat ~/.DOCKERHUB_ACCESS_TOKEN | docker login -u dimiguel --password-stdin

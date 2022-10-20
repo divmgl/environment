@@ -1,4 +1,4 @@
-FROM golang:1.18.3
+FROM golang:1.19
 
 RUN apt-get update && apt-get install -y direnv zsh zplug curl git
 
