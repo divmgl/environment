@@ -1,11 +1,6 @@
 version: "3.8"
 services:
   devcontainer:
-    image: dimiguel/devcontainer
+    image: ghcr.io/divmgl/environment/devcontainer
     build:
       context: devcontainer
-  go-devcontainer:
-    image: dimiguel/devcontainer:go
-    build:
-      context: devcontainer
-      dockerfile: go.Dockerfile
